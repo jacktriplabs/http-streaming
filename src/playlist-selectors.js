@@ -242,7 +242,7 @@ export let simpleSelector = function(
       if (enabledPlaylistReps[0]) {
         type = 'enabledPlaylistReps';
       }
-      logFn(`choosing ${representationToString(chosenRep)} using ${type} with options`, options);
+      logFn(`HELLO choosing ${representationToString(chosenRep)} using ${type} with options`, options);
 
       return chosenRep.playlist;
     }
@@ -334,7 +334,7 @@ export let simpleSelector = function(
       type = 'enabledPlaylistReps';
     }
 
-    logFn(`choosing ${representationToString(chosenRep)} using ${type} with options`, options);
+    logFn(`GOODBYE choosing ${representationToString(chosenRep)} using ${type} with options`, options);
     return chosenRep.playlist;
   }
   logFn('could not choose a playlist with options', options);
